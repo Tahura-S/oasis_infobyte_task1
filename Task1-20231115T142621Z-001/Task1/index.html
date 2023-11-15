@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Landing page using HTML CSS</title>
+    
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("ss1.png");            
+            background-size: cover;
+            margin: 0;
+        }
+
+        header {
+            background-image: url("h2.jpeg");
+            background-size: contain;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 3em;
+            letter-spacing: 2px;
+            color: indianred;
+            
+        }
+        .login,
+        .signup{
+            margin-right: 0px;
+        }
+        .signup a,
+        .menu a,
+        .login a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        
+        .menu a:hover:before {
+            width: 70%;
+        }
+        .signup a,
+        .login a {
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .signup a:hover,
+        .login a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        
+
+        .h-txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: indianred;
+        }
+
+        .h-txt span {
+            letter-spacing: 5px;
+            font-size: 1.5em;
+        }
+
+        .h-txt h1 {
+            font-size: 1.3em;
+            letter-spacing: 2px;
+            
+        }
+
+        .h-txt h2 {
+            font-size: 5em;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            background: indianred;
+            color:white ;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+
+        .h-txt a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-box {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        
+        footer {
+            background-color: indianred;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Wellness World
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Fitness</a>
+                <a href="#">Food</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="login">
+                <a href="#">Login</a>
+            </div>
+            <div class="signup">
+                <a href="#">Sign up</a>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <div class="h-txt">
+        <span>Welcome To</span>
+        <h2>Wellness World</h2>
+        <h1>Your gateway to a healthier life.</h1>
+        <br>
+        <h3>Explore</p>
+
+        <div class="search-container">
+            <form action="/search">
+                <input type="text" class="search-box" placeholder="Search articles">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div>
+            <a href="#contact">Contact Us</a> |
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="https://www.pinterest.com/" target="_blank">Pinterest</a> |
+            <a href="#about">About</a> |
+            <a href="#privacy">Privacy</a> |
+            <a href="#terms">Terms</a> |
+            <a href="#support">Support</a>
+        </div>
+        <div style="text-align: center;">
+            &copy; 2023 Wellness World
+        </div>
+    </footer>
+</body>
+
+</html>
